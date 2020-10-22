@@ -1,0 +1,478 @@
+{"record_time": "2020-09-09 15:03:48,127", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+TypeError: object str can't be used in 'await' expression
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 15:03:52,650", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+TypeError: object str can't be used in 'await' expression
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:05:50,794", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 55, in reponse_invoke
+    self.http_reponse(self.json_dumps(invoke_result.__dict__))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 31, in json_dumps
+    return json.dumps(rep_dic, ensure_ascii=False, cls=JsonEncoder)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "D:\Tool\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\json.py", line 31, in default
+    return json.JSONEncoder.default(self, obj)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IndexTest is not JSON serializable
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:08:51,582", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    print(self.json_dumps(invoke_result.__dict__))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 31, in json_dumps
+    return json.dumps(rep_dic, ensure_ascii=False, cls=JsonEncoder)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "D:\Tool\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\json.py", line 31, in default
+    return json.JSONEncoder.default(self, obj)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IndexTest is not JSON serializable
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:08:53,040", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    print(self.json_dumps(invoke_result.__dict__))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 31, in json_dumps
+    return json.dumps(rep_dic, ensure_ascii=False, cls=JsonEncoder)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "D:\Tool\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\json.py", line 31, in default
+    return json.JSONEncoder.default(self, obj)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IndexTest is not JSON serializable
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:10:08,960", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    print(self.json_dumps(invoke_result.__dict__))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 31, in json_dumps
+    return json.dumps(rep_dic, ensure_ascii=False, cls=JsonEncoder)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "D:\Tool\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\json.py", line 31, in default
+    return json.JSONEncoder.default(self, obj)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IndexTest is not JSON serializable
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:15:17,291", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 55, in reponse_invoke
+    print(self.json_dumps(invoke_result.__dict__))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 31, in json_dumps
+    return json.dumps(rep_dic, ensure_ascii=False, cls=JsonEncoder)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "D:\Tool\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\json.py", line 31, in default
+    return json.JSONEncoder.default(self, obj)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IndexTest is not JSON serializable
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:27:33,923", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    result_data.ResultCode=result_code
+AttributeError: 'dict' object has no attribute 'ResultCode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:27:35,371", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    result_data.ResultCode=result_code
+AttributeError: 'dict' object has no attribute 'ResultCode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:27:35,839", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    result_data.ResultCode=result_code
+AttributeError: 'dict' object has no attribute 'ResultCode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:27:36,071", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    result_data.ResultCode=result_code
+AttributeError: 'dict' object has no attribute 'ResultCode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:27:36,247", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 54, in reponse_invoke
+    result_data.ResultCode=result_code
+AttributeError: 'dict' object has no attribute 'ResultCode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:28:35,757", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 58, in reponse_invoke
+    self.write(self.json_dumps(result_data.__dict__))
+AttributeError: 'dict' object has no attribute '__dict__'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 16:28:36,693", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 58, in reponse_invoke
+    self.write(self.json_dumps(result_data.__dict__))
+AttributeError: 'dict' object has no attribute '__dict__'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:10:50,693", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 56, in reponse_invoke
+    self.write(app_des_encrypt.des_encrypt(self.json_dumps(result_data)))
+NameError: name 'app_des_encrypt' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:10:51,693", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 56, in reponse_invoke
+    self.write(app_des_encrypt.des_encrypt(self.json_dumps(result_data)))
+NameError: name 'app_des_encrypt' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:16:50,484", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 56, in reponse_invoke
+    self.write(app_des_encrypt.des_encrypt(self.json_dumps(result_data)))
+TypeError: des_encrypt() missing 1 required positional argument: 'content'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:16:51,582", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 56, in reponse_invoke
+    self.write(app_des_encrypt.des_encrypt(self.json_dumps(result_data)))
+TypeError: des_encrypt() missing 1 required positional argument: 'content'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:18:10,284", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 56, in reponse_invoke
+    app_des_encrypt=app_des_encrypt()
+UnboundLocalError: local variable 'app_des_encrypt' referenced before assignment
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:19:30,983", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 57, in reponse_invoke
+    self.write(encrypt.des_encrypt(self.json_dumps(result_data)))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 8, in des_encrypt
+    des_obj = des(des_secret_key, CBC, des_secret_key, padmode=PAD_PKCS5)  # 初始化一个des对象，参数是秘钥，加密方式，偏移， 填充方式
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 399, in __init__
+    if len(key) != 8:
+TypeError: object of type 'NoneType' has no len()
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:20:43,537", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 57, in reponse_invoke
+    self.write(encrypt.des_encrypt(self.json_dumps(result_data)))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in des_encrypt
+    secret_bytes = des_obj.encrypt(content)   # 用对象的encrypt方法加密
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 655, in encrypt
+    data = self._guardAgainstUnicode(data)
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 241, in _guardAgainstUnicode
+    raise ValueError("pyDes can only work with encoded strings, not Unicode.")
+ValueError: pyDes can only work with encoded strings, not Unicode.
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:21:38,473", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 57, in reponse_invoke
+    self.write(encrypt.des_encrypt(self.json_dumps(result_data)))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in des_encrypt
+    secret_bytes = des_obj.encrypt(content)   # 用对象的encrypt方法加密
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 655, in encrypt
+    data = self._guardAgainstUnicode(data)
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 241, in _guardAgainstUnicode
+    raise ValueError("pyDes can only work with encoded strings, not Unicode.")
+ValueError: pyDes can only work with encoded strings, not Unicode.
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:22:45,315", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 57, in reponse_invoke
+    self.write(encrypt.des_encrypt(self.json_dumps(result_data)))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in des_encrypt
+    secret_bytes = des_obj.encrypt(content)   # 用对象的encrypt方法加密
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 655, in encrypt
+    data = self._guardAgainstUnicode(data)
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 241, in _guardAgainstUnicode
+    raise ValueError("pyDes can only work with encoded strings, not Unicode.")
+ValueError: pyDes can only work with encoded strings, not Unicode.
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:37:28,862", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 57, in reponse_invoke
+    self.write(encrypt.des_encrypt(self.json_dumps(result_data)))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in des_encrypt
+    secret_bytes = des_obj.encrypt(content)   # 用对象的encrypt方法加密
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 655, in encrypt
+    data = self._guardAgainstUnicode(data)
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 241, in _guardAgainstUnicode
+    raise ValueError("pyDes can only work with encoded strings, not Unicode.")
+ValueError: pyDes can only work with encoded strings, not Unicode.
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-09 18:38:15,010", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 6, in get
+    self.reponse_invoke("0","",test)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 57, in reponse_invoke
+    self.write(encrypt.des_encrypt(self.json_dumps(result_data)))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in des_encrypt
+    secret_bytes = des_obj.encrypt(content)   # 用对象的encrypt方法加密
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 655, in encrypt
+    data = self._guardAgainstUnicode(data)
+  File "D:\Tool\Python38\lib\site-packages\pyDes.py", line 241, in _guardAgainstUnicode
+    raise ValueError("pyDes can only work with encoded strings, not Unicode.")
+ValueError: pyDes can only work with encoded strings, not Unicode.
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 09:28:51,847", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 5, in get
+    dic_body=json.dumps(self.request_body_to_dict)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type method is not JSON serializable
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 09:28:59,531", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 5, in get
+    dic_body=json.dumps(self.request_body_to_dict)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Tool\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type method is not JSON serializable
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:36:29,731", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 10, in get
+    self.reponse_invoke("0","",useragent)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 58, in reponse_invoke
+    encrypt=app_des_encrypt()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in __init__
+    self.des_obj = des(des_secret_key, CBC, des_secret_key,None, padmode=PAD_PKCS5)  # 初始化一个des对象，参数是秘钥，加密方式，偏移， 填充方式
+NameError: name 'des_secret_key' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:36:53,671", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 10, in get
+    self.reponse_invoke("0","",useragent)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 58, in reponse_invoke
+    encrypt=app_des_encrypt()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in __init__
+    self.des_obj = des(des_secret_key, CBC, des_secret_key,None, padmode=PAD_PKCS5)  # 初始化一个des对象，参数是秘钥，加密方式，偏移， 填充方式
+NameError: name 'des_secret_key' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:38:03,244", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 10, in get
+    self.reponse_invoke("0","",useragent)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 58, in reponse_invoke
+    encrypt=app_des_encrypt()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 9, in __init__
+    self.des_obj = des(des_secret_key, CBC, des_secret_key,None, padmode=PAD_PKCS5)  # 初始化一个des对象，参数是秘钥，加密方式，偏移， 填充方式
+NameError: name 'des_secret_key' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:47:04,969", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 71, in get_useragent
+    user_agent1.decode("unicode_escape'")), "&")
+AttributeError: 'str' object has no attribute 'decode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:49:43,683", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 72, in get_useragent
+    user_agent1.decode("unicode_escape'")), "&")
+AttributeError: 'str' object has no attribute 'decode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:52:26,937", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 76, in get_useragent
+    user_agent=json.loads(dict_useragent,object_hook=UserAgentInfo)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:54:03,375", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 72, in get_useragent
+    user_agent1=decrypt.des_decrypt()
+TypeError: des_decrypt() missing 1 required positional argument: 'content'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:54:30,925", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 72, in get_useragent
+    user_agent1=decrypt.des_decrypt(user_agent1)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 17, in des_decrypt
+    content=base64.decode(content)
+TypeError: decode() missing 1 required positional argument: 'output'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:54:46,531", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 72, in get_useragent
+    user_agent1=decrypt.des_decrypt(user_agent1)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\app_des_encrypt.py", line 17, in des_decrypt
+    content=base64.decode(content)
+TypeError: decode() missing 1 required positional argument: 'output'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 11:59:38,126", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 73, in get_useragent
+    dict_str=user_agent1.split("&")
+TypeError: a bytes-like object is required, not 'str'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 12:02:18,921", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 77, in get_useragent
+    user_agent=json.loads(dict_useragent,object_hook=UserAgentInfo)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 12:04:25,398", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 77, in get_useragent
+    user_agent=json.loads(json.dumps(dict_useragent),object_hook=UserAgentInfo)
+  File "D:\Tool\Python38\lib\json\__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "D:\Tool\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Tool\Python38\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+TypeError: __init__() takes 1 positional argument but 2 were given
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-10 14:23:52,048", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1701, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\Index.py", line 9, in get
+    useragent=self.get_useragent()
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 77, in get_useragent
+    if hasattr(user_agent, kv[0]) and le(kv)==2:
+NameError: name 'le' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}

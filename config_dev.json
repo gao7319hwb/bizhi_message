@@ -1,0 +1,51 @@
+{
+    "run_port": "8080",
+    "app_key": "29100714",
+    "app_secret": "303bc6d5190e08863eda6226ac4533fc",
+    "test_open_id": "AAFRsaLrAKYmeFFoo7gk2xEN",
+    "test_user_nick": "loveyouhk",
+    "test_source_app_id": "3000000006168005",
+    "client_template_id": "3000000003443954",
+    "server_template_id": "3000000003444475",
+    "article_code": "FW_GOODS-1001093556",
+    "des_encrypt_key":"n84mUckz",
+    "redis": {
+        "host": "192.168.100.154",
+        "port": 6390,
+        "password": "",
+        "db": 0
+    },
+    "db_mang_he": {
+        "host": "192.168.100.154",
+        "port": 33161,
+        "user": "cloud_app",
+        "passwd": "cloud112233",
+        "db": "mang_he",
+        "charset": "utf8"
+    },
+    "gao7_sdk": {
+        "host": "192.168.100.154",
+        "port": 33251,
+        "user": "gao7test",
+        "passwd": "gao7test",
+        "db": "gao7sdk",
+        "charset": "utf8"
+    },
+    "log": {
+        "db_log": {
+            "host": "192.168.100.154",
+            "port": 33161,
+            "user": "cloud_app",
+            "passwd": "cloud112233",
+            "db": "mang_he",
+            "charset": "utf8"
+        },
+        "db_log_table_name": "python_log_tb",
+        "log_info_to_db": true,
+        "log_error_to_db": true
+    },
+    "es":{
+        "host":"http://admin:JwFa6BSq6ypxUpF@tianzhi-elastic.gao7.com",
+        "port":80
+    }
+}

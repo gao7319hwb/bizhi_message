@@ -1,0 +1,633 @@
+{"record_time": "2020-09-23 17:13:56,215", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 24, in get_async
+    es=SevenElasticSearch(es_index= es_index, doc_type_name=es_doc_type)
+TypeError: __init__() got an unexpected keyword argument 'es_index'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-23 17:15:47,907", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Tool\Python38\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "D:\Tool\Python38\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "D:\Tool\Python38\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Tool\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 228, in perform_request
+    response = self.pool.urlopen(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\util\retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 37, in get_async
+    message_list=es.es_querypage(es_body,pageSize,from_)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 17, in es_querypage
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10))
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:13:04,351", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Tool\Python38\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "D:\Tool\Python38\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "D:\Tool\Python38\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Tool\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 228, in perform_request
+    response = self.pool.urlopen(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\util\retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 38, in get_async
+    message_list=es.es_querypage(es_body,pageSize,from_)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 17, in es_querypage
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10))
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:18:02,046", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 86, in get_async
+    es=SevenElasticSearch(es_index= es_index, doc_type_name=es_doc_type)
+TypeError: __init__() got an unexpected keyword argument 'es_index'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:19:05,802", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 86, in get_async
+    es=SevenElasticSearch(es_index= es_index, doc_type_name=es_doc_type)
+TypeError: __init__() got an unexpected keyword argument 'es_index'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:20:08,306", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Tool\Python38\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "D:\Tool\Python38\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "D:\Tool\Python38\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Tool\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 228, in perform_request
+    response = self.pool.urlopen(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\util\retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 87, in get_async
+    result=es.es_queryrecord(es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 28, in es_queryrecord
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10))
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:21:53,386", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 87, in get_async
+    result=es.es_queryrecord(es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 28, in es_queryrecord
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[bool] query does not support [term]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:21:56,162", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 87, in get_async
+    result=es.es_queryrecord(es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 28, in es_queryrecord
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[bool] query does not support [term]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:23:04,666", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 88, in get_async
+    return self.reponse_invoke(data=message_list)
+NameError: name 'message_list' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:28:11,465", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Tool\Python38\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "D:\Tool\Python38\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "D:\Tool\Python38\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Tool\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 228, in perform_request
+    response = self.pool.urlopen(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\util\retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 87, in get_async
+    result=es.es_queryrecord(key_id="retainedID",key_value="5013930867277359946")
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 29, in es_queryrecord
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10))
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:28:50,262", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 87, in get_async
+    result=es.es_queryrecord(key_id="retainedID",key_value="5013930867277359946")
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 29, in es_queryrecord
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', 'no [query] registered for [trem]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:47:51,125", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Tool\Python38\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "D:\Tool\Python38\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "D:\Tool\Python38\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Tool\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 228, in perform_request
+    response = self.pool.urlopen(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\util\retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 46, in get_async
+    result=es.es_update(key_id="5013930867277359946",param_dict=es_update_dict)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 39, in es_update
+    result= self.es.update(id=key_id, index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1850, in update
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10))
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:50:54,361", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 85, in get_async
+    retainedID=self.get_encrypt_param_string("retainedID")
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 120, in get_encrypt_param_string
+    list_str = str.split(CodingHelper.url_decode(p.decode("unicode_escape'")), "&")
+AttributeError: 'str' object has no attribute 'decode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:51:34,688", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 90, in get_async
+    result=es.es_queryrecord(key_name="retainedID",key_value=retainedID)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 28, in es_queryrecord
+    es_body={"query":{"term":{str(key_id):key_value}}}
+NameError: name 'key_id' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:51:59,318", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 90, in get_async
+    result=es.es_queryrecord(key_name="retainedID",key_value=retainedID)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 28, in es_queryrecord
+    es_body={"query":{"term":{str(key_id):key_value}}}
+NameError: name 'key_id' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:52:18,931", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 90, in get_async
+    result=es.es_queryrecord(key_name="retainedID",key_value=retainedID)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 28, in es_queryrecord
+    es_body={"query":{"term":{str(key_name):key_value}}}
+NameError: name 'key_id' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:52:40,063", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 90, in get_async
+    result=es.es_queryrecord(key_name="retainedID",key_value=retainedID)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 28, in es_queryrecord
+    es_body={"query":{"term":{str(key_name):key_value}}}
+NameError: name 'key_id' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:53:12,403", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Tool\Python38\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "D:\Tool\Python38\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "D:\Tool\Python38\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Tool\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 228, in perform_request
+    response = self.pool.urlopen(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\util\retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 90, in get_async
+    result=es.es_queryrecord(key_name="retainedID",key_value=retainedID)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 29, in es_queryrecord
+    data= self.es.search(index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10))
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 17:59:57,160", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 49, in get_async
+    result=es.es_update(key_id=id,param_dict=es_update_dict)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 38, in es_update
+    es_body={"doc":json_dumps(param_dict)}
+NameError: name 'json_dumps' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 18:00:39,896", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 49, in get_async
+    result=es.es_update(key_id=id,param_dict=es_update_dict)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 38, in es_update
+    es_body={"doc":json.dumps(param_dict)}
+NameError: name 'json_dumps' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 18:03:07,901", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Tool\Python38\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "D:\Tool\Python38\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "D:\Tool\Python38\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Tool\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 228, in perform_request
+    response = self.pool.urlopen(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\util\retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Tool\Python38\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 49, in get_async
+    result=es.es_update(key_id=id,param_dict=str(es_update_dict))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 39, in es_update
+    result= self.es.update(id=key_id, index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1850, in update
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 240, in perform_request
+    raise ConnectionTimeout("TIMEOUT", str(e), e)
+elasticsearch.exceptions.ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host='tianzhi-elastic.gao7.com', port=80): Read timed out. (read timeout=10))
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-24 18:03:14,957", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 49, in get_async
+    result=es.es_update(key_id=id,param_dict=str(es_update_dict))
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 39, in es_update
+    result= self.es.update(id=key_id, index=self.index_name,doc_type=self.doc_type_name,body=es_body)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1850, in update
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'x_content_parse_exception', "[1:8] [UpdateRequest] doc doesn't support values of type: VALUE_STRING")
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}

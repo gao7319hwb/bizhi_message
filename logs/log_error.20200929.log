@@ -1,0 +1,13 @@
+{"record_time": "2020-09-29 15:18:13,198", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 45, in get_async
+    msgId=self.get_encrypt_param_int("msgId")
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 96, in get_encrypt_param_int
+    list_str = str.split(CodingHelper.url_decode(p.decode("unicode_escape'")), "&")
+AttributeError: 'str' object has no attribute 'decode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}

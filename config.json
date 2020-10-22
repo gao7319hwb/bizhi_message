@@ -1,0 +1,39 @@
+{
+    "run_port": "8080",
+    "app_key": "29100714",
+    "app_secret": "303bc6d5190e08863eda6226ac4533fc",
+    "test_open_id": "",
+    "test_user_nick": "",
+    "test_source_app_id": "",
+    "client_template_id": "3000000003443954",
+    "server_template_id": "3000000003444475",
+    "article_code": "FW_GOODS-1001093556",
+    "des_encrypt_key":"n84mUckz",
+    "redis": {
+        "host": "r-k2j7uonwazezdetos1.redis.zhangbei.rds.aliyuncs.com",
+        "port": 6379,
+        "password": "pYDBQlXO2Qv",
+        "db": 0
+    },
+    "db_mang_he": {
+        "host": "rm-k2ju54uw889944kii.mysql.zhangbei.rds.aliyuncs.com",
+        "port": 3306,
+        "user": "mang_he",
+        "passwd": "BSqxUpF6ypYDBQlmo1tEp",
+        "db": "mang_he",
+        "charset": "utf8"
+    },
+    "log": {
+        "db_log": {
+            "host": "rm-k2ju54uw889944kii.mysql.zhangbei.rds.aliyuncs.com",
+            "port": 3306,
+            "user": "mang_he",
+            "passwd": "BSqxUpF6ypYDBQlmo1tEp",
+            "db": "mang_he",
+            "charset": "utf8"
+        },
+        "db_log_table_name": "python_log_tb",
+        "log_info_to_db": false,
+        "log_error_to_db": false
+    }
+}

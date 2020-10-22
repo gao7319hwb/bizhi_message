@@ -1,0 +1,673 @@
+{"record_time": "2020-09-16 15:03:30,767", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 7, in get_async
+    if useragent.pid<=0:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 15:04:17,693", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 14, in get_async
+    return reponse_invoke(result_code="0", result_message="", data=message_list)
+NameError: name 'reponse_invoke' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:30:58,496", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 8, in get_async
+    msgType=self.get_encrypt_param_int("msgType")
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_base.py", line 94, in get_encrypt_param_int
+    list_str = str.split(CodingHelper.url_decode(p.decode("unicode_escape'")), "&")
+AttributeError: 'str' object has no attribute 'decode'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:33:40,578", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 9, in get_async
+    if msgType==int(enum.MessageType.User) and int(useragent.login)<1:
+NameError: name 'enum' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:35:15,632", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 9, in get_async
+    if msgType==int(enum.MessageType.User) and int(useragent.login)<1:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'MessageType'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:35:19,939", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 9, in get_async
+    if msgType==int(enum.MessageType.User) and int(useragent.login)<1:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'MessageType'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:37:35,589", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 18, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[range] malformed query, expected [END_OBJECT] but found [FIELD_NAME]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:46:52,848", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[range] malformed query, expected [END_OBJECT] but found [FIELD_NAME]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:46:52,875", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[range] malformed query, expected [END_OBJECT] but found [FIELD_NAME]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:50:03,111", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[range] malformed query, expected [END_OBJECT] but found [FIELD_NAME]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:50:03,204", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[range] malformed query, expected [END_OBJECT] but found [FIELD_NAME]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:50:58,213", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[range] malformed query, expected [END_OBJECT] but found [FIELD_NAME]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:52:44,142", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 16, in get_async
+    if msgType==int(enum.MessageType.System.value):
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:56:19,104", "level": "ERROR", "log_msg": "ValueError: 1000 is not a valid MessageType
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 9, in get_async
+    msgTypeEnum=enum.MessageType(msgType)
+  File "D:\Tool\Python38\lib\enum.py", line 304, in __call__
+    return cls.__new__(cls, value)
+  File "D:\Tool\Python38\lib\enum.py", line 595, in __new__
+    raise exc
+  File "D:\Tool\Python38\lib\enum.py", line 579, in __new__
+    result = cls._missing_(value)
+  File "D:\Tool\Python38\lib\enum.py", line 608, in _missing_
+    raise ValueError("%r is not a valid %s" % (value, cls.__name__))
+ValueError: 1000 is not a valid MessageType
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 16:56:35,780", "level": "ERROR", "log_msg": "ValueError: 1000 is not a valid MessageType
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 9, in get_async
+    msgTypeEnum=enum.MessageType(msgType)
+  File "D:\Tool\Python38\lib\enum.py", line 304, in __call__
+    return cls.__new__(cls, value)
+  File "D:\Tool\Python38\lib\enum.py", line 595, in __new__
+    raise exc
+  File "D:\Tool\Python38\lib\enum.py", line 579, in __new__
+    result = cls._missing_(value)
+  File "D:\Tool\Python38\lib\enum.py", line 608, in _missing_
+    raise ValueError("%r is not a valid %s" % (value, cls.__name__))
+ValueError: 1000 is not a valid MessageType
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:13:32,401", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', "[range] query doesn't support multiple fields, found [addDateInt] and [msgType]")
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:18:46,589", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[range] malformed query, expected [END_OBJECT] but found [FIELD_NAME]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:25:24,977", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    filter_dict={"filter":{term_dict,range_dict}}
+TypeError: unhashable type: 'dict'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:25:49,206", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 19, in get_async
+    filter_dict={"filter":{term_dict,range_dict}}
+TypeError: unhashable type: 'dict'
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:32:19,583", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 26, in get_async
+    message_list=es.es_querypage(es_index,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', "[range] query doesn't support multiple fields, found [addDateInt] and [msgType]")
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:51:11,954", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 10, in get_async
+    return reponse_invoke(result_code="-1", result_message="用户未登录", data=None)
+NameError: name 'reponse_invoke' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:52:33,838", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 10, in get_async
+    return reponse_invoke(result_code="-1", result_message="用户未登录", data=None)
+NameError: name 'reponse_invoke' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 17:53:59,960", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 10, in get_async
+    return reponse_invoke(result_code="-1", result_message="用户未登录", data=None)
+NameError: name 'reponse_invoke' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 20:57:15,332", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 11, in get_async
+    return reponse_invoke(result_code="-1", result_message="msgType参数错误", data=None)
+NameError: name 'reponse_invoke' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-16 20:57:50,453", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 11, in get_async
+    return reponse_invoke(result_code="-1", result_message="msgType参数错误", data=None)
+NameError: name 'reponse_invoke' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:13:15,807", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 60, in get_async
+    count=es.es_querycount(es_index,es_doc_type,es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 22, in es_querycount
+    count= self.es.count(body=param_body,index=param_index,doc_type=param_doc_type)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 541, in count
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserID]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:14:24,601", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 60, in get_async
+    count=es.es_querycount(es_index,es_doc_type,es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 22, in es_querycount
+    count= self.es.count(body=param_body,index=param_index,doc_type=param_doc_type)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 541, in count
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserID]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:16:02,114", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 60, in get_async
+    count=es.es_querycount(es_index,es_doc_type,es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 22, in es_querycount
+    count= self.es.count(body=param_body,index=param_index,doc_type=param_doc_type)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 541, in count
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserID]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:16:30,565", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 60, in get_async
+    count=es.es_querycount(es_index,es_doc_type,es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 22, in es_querycount
+    count= self.es.count(body=param_body,index=param_index,doc_type=param_doc_type)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 541, in count
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserId]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:42:05,791", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 61, in get_async
+    count=es.es_querycount(es_index,es_doc_type,es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 22, in es_querycount
+    count= self.es.count(body=param_body,index=param_index,doc_type=param_doc_type)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 541, in count
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserId]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:42:05,940", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 61, in get_async
+    count=es.es_querycount(es_index,es_doc_type,es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 22, in es_querycount
+    count= self.es.count(body=param_body,index=param_index,doc_type=param_doc_type)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 541, in count
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserId]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:43:53,798", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 61, in get_async
+    count=es.es_querycount(es_index,es_doc_type,es_body)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 22, in es_querycount
+    count= self.es.count(body=param_body,index=param_index,doc_type=param_doc_type)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 541, in count
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[multi_match] query does not support [toUserId]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 17:47:46,690", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 36, in get_async
+    message_list=es.es_querypage(es_index,es_doc_type,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index,doc_type=param_doc_type, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserId]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 18:07:58,699", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 36, in get_async
+    message_list=es.es_querypage(es_index,es_doc_type,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index,doc_type=param_doc_type, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[terms] query does not support [toUserId]')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 18:09:51,901", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 33, in get_async
+    es_body={"query":{"bool":filter_dict}}
+NameError: name 'filter_dict' is not defined
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 18:10:15,658", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 35, in get_async
+    message_list=es.es_querypage(es_index,es_doc_type,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index,doc_type=param_doc_type, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[toUserId] query malformed, no start_object after query name')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
+{"record_time": "2020-09-17 18:11:11,990", "level": "ERROR", "log_msg": "Traceback (most recent call last):
+  File "D:\Tool\Python38\lib\site-packages\tornado\web.py", line 1703, in _execute
+    result = await result
+  File "D:\Tool\Python38\lib\site-packages\seven_framework\web_tornado\base_handler\base_handler.py", line 48, in get
+    await asyncio.get_event_loop().run_in_executor(self.executor,
+  File "D:\Tool\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\server\sdk_message.py", line 35, in get_async
+    message_list=es.es_querypage(es_index,es_doc_type,es_body,30,0)
+  File "d:\Project\python\bizhi\bizhi_message\handlers\seven_elasticsearch.py", line 15, in es_querypage
+    data= self.es.search(index=param_index,doc_type=param_doc_type, body=param_body,size=param_size,from_=param_from_)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\utils.py", line 92, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\client\__init__.py", line 1622, in search
+    return self.transport.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\transport.py", line 355, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 248, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\Tool\Python38\lib\site-packages\elasticsearch\connection\base.py", line 243, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', '[toUserId] query malformed, no start_object after query name')
+", "host_ip": "192.168.28.42", "project_name": "bizhi_message"}
