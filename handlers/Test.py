@@ -13,3 +13,8 @@ def console(name,*arg,**_dict):
 
 console("hwb","is","man",job="coder",isRead=1)
 
+def main():
+    print("This Test.py's Main Method")
+
+if __name__ == "__main__":
+    pass
